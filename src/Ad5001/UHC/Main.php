@@ -111,7 +111,6 @@ class Main extends PluginBase implements Listener{
                 $sender->sendMessage("You are not in a UHC world or UHC is already started");
             }
             return true;
-            break;
             case "stop":
             if(isset($this->UHCManager->getStartedUHCs()[$sender->getLevel()->getName()])) {
                 $this->getLogger()->debug("Starting game {$sender->getLevel()->getName()}");
@@ -123,7 +122,6 @@ class Main extends PluginBase implements Listener{
                 $sender->sendMessage("You are not in a UHC world or UHC is already started");
             }
             return true;
-            break;
             case "howtoplay":
             case "?":
             case "help":
@@ -151,7 +149,6 @@ class Main extends PluginBase implements Listener{
                 }
             }
             return true;
-            break;
         }
     }
     break;
@@ -214,7 +211,6 @@ class Main extends PluginBase implements Listener{
             }
         }
         return true;
-    break;
 }
 return false;
  }
